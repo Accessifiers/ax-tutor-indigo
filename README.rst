@@ -57,8 +57,8 @@ This plugin can serve as a starting point to create your own themes. Just fork t
 
 You will have to start by installing indigo from source::
 
-    git clone https://github.com/overhangio/tutor-indigo.git
-    pip install -e ./tutor-indigo
+    git clone https://github.com/overhangio/ax-tutor-indigo.git
+    pip install -e ./ax-tutor-indigo
     tutor plugins enable indigo
 
 Any change you make to the theme can be viewed immediately in development mode (with `tutor dev launch` or `tutor dev start`) after you run::
@@ -68,7 +68,7 @@ Any change you make to the theme can be viewed immediately in development mode (
 To deploy your changes to production, you will have to rebuild the "openedx" Docker image and restart your containers::
 
     tutor images build openedx
-    tutor local start -d
+    tutor local start -d or tutor local launch
 
 Changing the Styling in Sass files
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
