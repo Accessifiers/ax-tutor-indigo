@@ -61,14 +61,14 @@ You will have to start by installing indigo from source::
     pip install -e ./ax-tutor-indigo
     tutor plugins enable indigo
 
-Any change you make to the theme can be viewed immediately in development mode (with `tutor dev launch` or `tutor dev start`) after you run::
+Any change you make to the theme can be viewed immediately in development mode (with `tutor dev launch` or `tutor dev start lms`) after you run::
 
     tutor config save
 
 To deploy your changes to production, you will have to rebuild the "openedx" Docker image and restart your containers::
 
     tutor images build openedx
-    tutor local start -d or tutor local launch
+    tutor local start -d
 
 Changing the Styling in Sass files
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
