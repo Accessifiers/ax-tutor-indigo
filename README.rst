@@ -61,7 +61,7 @@ You will have to start by installing indigo from source::
     pip install -e ./tutor-indigo
     tutor plugins enable indigo
 
-Any change you make to the theme can be viewed immediately in development mode (with `tutor dev ...` commands) after you run::
+Any change you make to the theme can be viewed immediately in development mode (with `tutor dev launch` or `tutor dev start lms`) after you run::
 
     tutor config save
 
