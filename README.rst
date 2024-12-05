@@ -70,6 +70,8 @@ To deploy your changes to production, you will have to rebuild the "openedx" Doc
     tutor images build openedx
     tutor local start -d
 
+For a video tutorial, visit [Tutor custom theme tutorial (indigo)](https://www.youtube.com/watch?v=vWk0nJLR3zE&feature=youtu.be)
+
 Changing the Styling in Sass files
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
