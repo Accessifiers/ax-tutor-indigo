@@ -57,8 +57,8 @@ This plugin can serve as a starting point to create your own themes. Just fork t
 
 You will have to start by installing indigo from source::
 
-    git clone https://github.com/overhangio/ax-tutor-indigo.git
-    pip install -e ./ax-tutor-indigo
+    git clone https://github.com/Accessifiers/ax-tutor-indigo.git
+    pip install -e ./tutor-indigo
     tutor plugins enable indigo
 
 Any change you make to the theme can be viewed immediately in development mode (with `tutor dev launch` or `tutor dev start lms`) after you run::
@@ -69,6 +69,8 @@ To deploy your changes to production, you will have to rebuild the "openedx" Doc
 
     tutor images build openedx
     tutor local start -d
+
+For a video tutorial, visit [Tutor custom theme tutorial (indigo)](https://www.youtube.com/watch?v=vWk0nJLR3zE&feature=youtu.be)
 
 Changing the Styling in Sass files
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
