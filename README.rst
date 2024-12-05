@@ -57,7 +57,7 @@ This plugin can serve as a starting point to create your own themes. Just fork t
 
 You will have to start by installing indigo from source::
 
-    git clone https://github.com/overhangio/ax-tutor-indigo.git
+    git clone https://github.com/Accessifiers/ax-tutor-indigo.git
     pip install -e ./ax-tutor-indigo
     tutor plugins enable indigo
 
