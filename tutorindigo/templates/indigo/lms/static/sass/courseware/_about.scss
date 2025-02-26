@@ -85,6 +85,9 @@
                     border-radius: 8px;
                     border: 1px solid $primary;
                 }
+                .play-intro{
+                    z-index: 10;
+                }
             }
         }
     }
