@@ -65,10 +65,17 @@ Any change you make to the theme can be viewed immediately in development mode (
 
     tutor config save
 
-To deploy your changes to production, you will have to rebuild the "openedx" Docker image and restart your containers::
-
+If this doesn't allow immediate viewing, try rebuilding the image then running::
     tutor images build openedx
-    tutor local start -d
+    tutor local launch
+
+To deploy your changes to production, in addition to rebuilding the "openedx" Docker image, it needs to be pushed to a container registry defined in the config.yaml.
+
+To properly deploy changes in the docker image:
+    1. change DOCKER_IMAGE_OPENEDX (in config.yaml) to increment or set the right version
+    2. tutor images build openedx (some changes might require using argument --no-cache.)
+    3. tutor images push openedx (you may have to run `az acr login -n REGISTRY_NAME` first to save the credentials for ACR)
+    4. tutor k8s launch (start or restart does not use or load containers with the new image)
 
 For a video tutorial, visit [Tutor custom theme tutorial (indigo)](https://www.youtube.com/watch?v=vWk0nJLR3zE&feature=youtu.be)
 
