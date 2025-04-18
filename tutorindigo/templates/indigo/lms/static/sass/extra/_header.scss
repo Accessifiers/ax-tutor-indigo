@@ -47,12 +47,12 @@ header.global-header {
 					font-weight: 500;
 					line-height: 22px;
 					padding: 20px 0;
-					color: $text-color-dark;
+					color: $text-color-d;
 					margin: 0 16px 0 0;
 					border-bottom: 2px solid transparent;
 					&.active,
 					&:hover {
-						color: $text-color-dark;
+						color: $text-color-d;
 						border-bottom: 2px solid $primary;
 					}
 				}
@@ -73,7 +73,7 @@ header.global-header {
 				margin: 12px 0;
 				&:after {
 					margin: 4px 0 0 4px;
-					border: 2px solid $text-color-dark;
+					border: 2px solid $text-color-d;
 					border-width: 2px 2px 0 0;
 					transform: rotate(135deg);
 					content: "";
@@ -114,7 +114,7 @@ header.global-header {
 						color: $light-dark;
 						&:hover {
 							background: $background-color-lighter;
-							color: $text-color-dark;
+							color: $text-color-d;
 						}
 					}
 				}
@@ -270,11 +270,11 @@ body.indigo-dark-theme {
 		.mobile-nav-link {
 			a {
 				background: $background-color-light;
-				color: $text-color-dark;
+				color: $text-color-d;
 				&:hover,
 				&.active {
 					background: $background-color-lighter;
-					color: $text-color-dark;
+					color: $text-color-d;
 				}
 			}
 		}
@@ -311,11 +311,11 @@ body.indigo-dark-theme {
 						0px 10px 15px -3px rgba(255, 255, 255, 0.1);
 					.dropdown-item {
 						a {
-							color: $text-color-dark;
+							color: $text-color-d;
 							background: $background-color-light;
 							&:hover {
 								background: $background-color-lighter;
-								color: $text-color-dark;
+								color: $text-color-d;
 							}
 						}
 					}
