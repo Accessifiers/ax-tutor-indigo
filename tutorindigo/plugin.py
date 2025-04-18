@@ -112,7 +112,8 @@ indigo_styled_mfes = [
     "account",
     "discussions",
 ]
-
+#RUN npm install '@edx/brand@npm:@edly-io/indigo-brand-openedx@^2.1.1'
+#RUN npm install '@edx/brand@https://github.com/Accessifiers/ax-brand.git'
 hooks.Filters.ENV_PATCHES.add_items(
     [
         (
